@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Productosdestacados from './components/Productosdestacados';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar></Navbar>
+    <hr />
+    <h2>Producto destacado</h2>
+    <hr />
+    <div className="DivProdDest">
+    <Productosdestacados nombre="Lionel Messi" autor="Goy Dolar" />
     </div>
+    </>
   );
 }
 
